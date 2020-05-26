@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/letra/static/css/main.62143866.chunk.css",
+    "main.js": "/letra/static/js/main.d3088337.chunk.js",
+    "main.js.map": "/letra/static/js/main.d3088337.chunk.js.map",
+    "runtime-main.js": "/letra/static/js/runtime-main.41e6001c.js",
+    "runtime-main.js.map": "/letra/static/js/runtime-main.41e6001c.js.map",
+    "static/js/2.5f4df9e6.chunk.js": "/letra/static/js/2.5f4df9e6.chunk.js",
+    "static/js/2.5f4df9e6.chunk.js.map": "/letra/static/js/2.5f4df9e6.chunk.js.map",
+    "index.html": "/letra/index.html",
+    "precache-manifest.e60e867c903cb2a0212a8aaeac10533a.js": "/letra/precache-manifest.e60e867c903cb2a0212a8aaeac10533a.js",
+    "service-worker.js": "/letra/service-worker.js",
+    "static/css/main.62143866.chunk.css.map": "/letra/static/css/main.62143866.chunk.css.map",
+    "static/media/loupe.76e148cd.svg": "/letra/static/media/loupe.76e148cd.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.41e6001c.js",
+    "static/js/2.5f4df9e6.chunk.js",
+    "static/css/main.62143866.chunk.css",
+    "static/js/main.d3088337.chunk.js"
+  ]
+}
