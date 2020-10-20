@@ -1,0 +1,11 @@
+a.track {
+  color: var(--dark);
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: "Roboto Slab", "Source Serif Pro", "Piazzolla", serif;
+  transition: all 150ms ease-in-out
+}
+
+a.track:hover {
+  color: var(--main);
+}

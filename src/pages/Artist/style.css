@@ -1,0 +1,33 @@
+.artist {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.artist h2 {
+  font-family: "Piazzolla", "Source Serif Pro", "Roboto Slab", serif;
+  font-size: 45px;
+  color: var(--dark);
+  font-weight: 700;
+  padding: 50px 20px;
+  word-break: break-all;
+}
+
+.artist .albums {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.artist .album {
+  width: 50%;
+  margin: 20px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .artist .album {
+    width: 100%;
+  }
+}

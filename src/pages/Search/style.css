@@ -1,0 +1,100 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 20px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.search .tracks,
+.search .albums,
+.search .artists {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.search .artists {
+  align-items: start;
+}
+
+.search h2 {
+  display: block;
+  width: 100%;
+  font-family: "Piazzolla", "Source Serif Pro", "Roboto Slab", serif;
+  font-size: 45px;
+  text-align: center;
+  color: var(--dark);
+  font-weight: 700;
+  padding: 50px 20px;
+}
+
+.tracks .found-track,
+.albums .found-album,
+.artists .found-artist {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+
+.tracks .found-track a.artist-name,
+.albums .found-album a.artist-name{
+  display: block;
+  width: fit-content;
+  margin: 0;
+  font-family: "Piazzolla", "Source Serif Pro", "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--dark);
+  margin-bottom: 0px;
+  margin-left: 10px;
+  transition: color 150ms ease-in-out;
+}
+
+.tracks .found-track a.track,
+.albums .found-album .album,
+.artists .found-artist a.artist-name {
+  width: fit-content;
+  margin: 0;
+  color: var(--dark);
+  font-size: 24px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-family: "Source Serif Pro", "Roboto Slab", "Piazzolla", serif;
+  transition: all 150ms ease-in-out;
+}
+
+.tracks .found-track a.artist-name:hover,
+.tracks .found-track a.track:hover,
+.artists .found-artist a.artist-name:hover,
+.albums .found-album a.artist-name:hover {
+  color: var(--main);
+}
+
+.no-result {
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Roboto Slab", "Source Serif Pro", "Piazzolla", serif;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 450px) {
+  .tracks .found-track,
+  .artists .found-artist,
+  .albums .found-album {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .tracks .found-track a.artist-name,
+  .albums .found-album a.artist-name {
+    margin: 10px 0;
+  }
+}

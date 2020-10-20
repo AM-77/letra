@@ -1,0 +1,45 @@
+.artists {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.artists h2 {
+  font-family: "Piazzolla", "Source Serif Pro", "Roboto Slab", serif;
+  font-size: 45px;
+  color: var(--dark);
+  font-weight: 700;
+  padding: 50px 20px;
+  align-items: center;
+}
+
+.artists .artists-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.artists .artists-list .artist-item {
+  max-width: 300px;
+  min-width: 300px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.artists .artists-list .artist-item a {
+  display: inline-block;
+  width: fit-content;
+  font-family: "Piazzolla", "Source Serif Pro", "Roboto Slab", serif;
+  color: var(--main);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  transition: color 150ms ease-in-out;
+}
+
+.artists .artists-list a:hover {
+  color: var(--dark);
+}

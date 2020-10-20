@@ -1,0 +1,52 @@
+.lyrics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 20px;
+}
+
+.lyrics h2.artist,
+.lyrics a.artistLink {
+  display: block;
+  width: fit-content;
+}
+
+.lyrics h2.artist {
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 45px;
+  font-family: "Piazzolla", "Roboto Slab", "Source Serif Pro", serif;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  transition: all 150ms ease-in-out
+}
+
+.lyrics a:hover h2.artist {
+  cursor: pointer;
+  color: var(--main);
+}
+
+.lyrics h4.title {
+  color: var(--main);
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Roboto Slab", "Source Serif Pro",  "Piazzolla", serif;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+.lyrics .lines {
+  text-align: center;
+}
+
+.lyrics .lines .line {
+  font-family: "Source Serif Pro", "Roboto Slab", "Piazzolla", serif;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--dark);
+}

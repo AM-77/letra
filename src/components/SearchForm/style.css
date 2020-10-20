@@ -1,0 +1,47 @@
+.search-form {
+  display: block;
+  width: 320px;
+  position: relative;
+  margin-left: auto;
+}
+
+.search-form input {
+  display: inline-block;
+  height: 36px;
+  width: 100%;
+  background: transparent;
+  border-radius: 20px;
+  border: 1px solid var(--light);
+  text-indent: 10px;
+  font-size: 14px;
+  font-family: "Roboto Slab", "Piazzolla", "Source Serif Pro", serif;
+  transition: all 150ms ease-in-out;
+}
+
+.search-form input:focus {
+  border: 1px solid var(--main);
+}
+
+.search-form button {
+  display: inline-block;
+  background: var(--white);
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  padding: 7px;
+  border-radius: 20px;
+}
+
+.search-form button svg {
+  display: block;
+  fill: var(--ligth);
+  width: 20px;
+  height: 20px;
+  transition: all 150ms ease-in-out;
+}
+
+.search-form button:hover svg {
+  fill: var(--main);
+}

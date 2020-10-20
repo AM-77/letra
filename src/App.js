@@ -1,37 +1,29 @@
-import React, { Component } from "react"
-import { HashRouter as Router, Switch, Route } from "react-router-dom"
-import Home from "./components/Home"
-import Lyrics from "./components/Lyrics"
-import Artist from "./components/Artist"
-import Navbar from "./components/Navbar"
-import Search from "./components/Search"
-import NotFound from "./components/NotFound"
-import ListArtists from "./components/ListArtists"
-import AppContext from "./AppContext"
-import Footer from "./components/Footer"
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Navbar from './containers/Navbar/Navbar';
+import Home from './pages/Home/Home';
+import Lyrics from './pages/Lyrics/Lyrics';
+import ArtistsList from './pages/ArtistsList/ArtistsList';
+import Artist from './pages/Artist/Artist';
+import Search from './pages/Search/Search';
+import NotFound from './pages/NotFound/NotFound';
+import Footer from './components/Footer/Footer';
 
-class App extends Component {
-  render() {
-    return (
-      <AppContext>
-        <Router>
-          <Navbar />
-          <div className="wrapper">
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/artist/:artist" component={Artist} />
-              <Route path="/artists/:artist" component={ListArtists} />
-              <Route path="/lyrics/:artist/:track" component={Lyrics} />
-              <Route path="/search/:looking_for" component={Search} />
-              <Route component={NotFound} />
-            </Switch>
-            <Footer />
-          </div>
-        </Router>
-
-      </AppContext>
-    )
-  }
+export default function App() {
+  return (
+    <Router>
+      <Navbar />
+      <div className="wrapper">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/artist/:artist" component={Artist} />
+          <Route path="/artists/:start" component={ArtistsList} />
+          <Route path="/lyrics/:artist/:track" component={Lyrics} />
+          <Route path="/search/:lookingFor" component={Search} />
+          <Route component={NotFound} />
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
-
-export default App

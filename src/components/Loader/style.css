@@ -1,0 +1,82 @@
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+
+.loader .logo {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.loader .dots {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 20px;
+  width: 100%;
+  padding: 0 12px;
+}
+
+.loader .dots i.dot {
+  display: block;
+  width: 6px;
+  height: 6px;
+  opacity: 0;
+  background: var(--main);
+  border-radius: 6px;
+  -webkit-animation: pulse .85s infinite ease-in-out;
+  -o-animation: pulse .85s infinite ease-in-out;
+  animation: pulse .85s infinite ease-in-out
+}
+
+.loader .dots i.dot:nth-child(1) {
+  -webkit-animation-delay: -.3s;
+  animation-delay: -.3s
+}
+
+.loader .dots i.dot:nth-child(3) {
+  -webkit-animation-delay: -.15s;
+  animation-delay: -.15s
+}
+
+
+@-webkit-keyframes pulse {
+  0%,100%,80% {
+      opacity: 0;
+      transform: scale(.8)
+  }
+
+  40% {
+      opacity: 0.5;
+      transform: scale(1)
+  }
+}
+
+@-moz-keyframes pulse {
+  0%,100%,80% {
+      opacity: 0;
+      transform: scale(.8)
+  }
+
+  40% {
+      opacity: 0.5;
+      transform: scale(1)
+  }
+}
+
+@keyframes pulse {
+  0%,100%,80% {
+      opacity: 0;
+      transform: scale(.8)
+  }
+
+  40% {
+      opacity: 0.5;
+      transform: scale(1)
+  }
+}
