@@ -23,7 +23,6 @@
 
 - run the app:
 
-    **inside the server folder:**
     - install dependencies :
 
         ```bash
